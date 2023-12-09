@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:07,600
+At night time, the majestic birds guide us along the oceans.
+
+2
+00:00:08,262 --> 00:00:11,800
+Like every year, as the sun breaks at dawn...
+
+3
+00:00:12,000 --> 00:00:16,224
+they will leave us on the new island.
