@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Short Trip - Alexander Perrin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta property="og:url" content="//alexanderperrin.com.au/paper/shorttrip" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Short Trip" />
+<meta property="og:description" content="An hand-drawn, interactive illustration about a tram driver, mountains, cloaked cats and everything in between." />
+<meta property="og:image" content="//alexanderperrin.com.au/paper/shorttrip/static/img/thumb.jpg" />
+<link rel="stylesheet" type="text/css" href="static/app20201224.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href="//alexanderperrin.com.au/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="//alexanderperrin.com.au/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//alexanderperrin.com.au/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="//alexanderperrin.com.au/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="//alexanderperrin.com.au/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="//alexanderperrin.com.au/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="//alexanderperrin.com.au/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//alexanderperrin.com.au/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//alexanderperrin.com.au/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="//alexanderperrin.com.au/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//alexanderperrin.com.au/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="//alexanderperrin.com.au/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//alexanderperrin.com.au/ico/favicon-16x16.png">
+<link rel="manifest" href="//alexanderperrin.com.au/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="http://alexanderperrin.com.au/ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<script type="cfcbfb21f6db71054ffaa74a-text/javascript">(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TNB957R');</script>
+
+<style>
+        .fixed {
+            position: fixed;
+        }
+        .fullscreen {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .text-center {
+            text-align: center;
+        }
+        #sound-playback {
+            text-align: center;
+            cursor: pointer;
+        }
+        #sound-playback>.play {
+            background-color: white;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 4px;
+            max-width: 200px;
+            margin: auto;
+            display: block;
+            border: 1px solid #cecece;
+        }
+        #actions {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            transition: height 0.5s;
+            height: 0px;
+        }
+        #actions >.action {
+            display: block;
+            margin: auto;
+            padding-right: 8px;
+        }
+        #actions.active {
+            height: 32px;
+        }
+    </style>
+<script type="cfcbfb21f6db71054ffaa74a-text/javascript">
+        // 1. String.prototype.trim polyfill
+        if (!"".trim) String.prototype.trim = function(){ return this.replace(/^[\s]+|[\s]+$/g, ''); };
+        (function(window){"use strict"; // prevent global namespace pollution
+        if(!window.DOMException) (DOMException = function(reason){this.message = reason}).prototype = new Error;
+        var wsRE = /[\11\12\14\15\40]/, wsIndex = 0, checkIfValidClassListEntry = function(O, V) {
+        if (V === "") throw new DOMException(
+            "Failed to execute '" + O + "' on 'DOMTokenList': The token provided must not be empty." );
+        if((wsIndex=V.search(wsRE))!==-1) throw new DOMException("Failed to execute '"+O+"' on 'DOMTokenList': " +
+            "The token provided ('"+V[wsIndex]+"') contains HTML space characters, which are not valid in tokens.");
+        }
+        // 2. Implement the barebones DOMTokenList livelyness polyfill
+        if (typeof DOMTokenList !== "function") (function(window){
+            var document = window.document, Object = window.Object, hasOwnProp = Object.prototype.hasOwnProperty;
+            var defineProperty = Object.defineProperty, allowTokenListConstruction = 0, skipPropChange = 0;
+            function DOMTokenList(){
+                if (!allowTokenListConstruction) throw TypeError("Illegal constructor"); // internally let it through
+            }
+            DOMTokenList.prototype.toString = DOMTokenList.prototype.toLocaleString = function(){return this.value};
+            DOMTokenList.prototype.add = function(){
+                a: for(var v=0, argLen=arguments.length,val="",ele=this[" uCL"],proto=ele[" uCLp"]; v!==argLen; ++v) {
+                    val = arguments[v] + "", checkIfValidClassListEntry("add", val);
+                    for (var i=0, Len=proto.length, resStr=val; i !== Len; ++i)
+                        if (this[i] === val) continue a; else resStr += " " + this[i];
+                    this[Len] = val, proto.length += 1, proto.value = resStr;
+                }
+                skipPropChange = 1, ele.className = proto.value, skipPropChange = 0;
+            };
+            DOMTokenList.prototype.remove = function(){
+                for (var v=0, argLen=arguments.length,val="",ele=this[" uCL"],proto=ele[" uCLp"]; v !== argLen; ++v) {
+                    val = arguments[v] + "", checkIfValidClassListEntry("remove", val);
+                    for (var i=0, Len=proto.length, resStr="", is=0; i !== Len; ++i)
+                        if(is){ this[i-1]=this[i] }else{ if(this[i] !== val){ resStr+=this[i]+" "; }else{ is=1; } }
+                    if (!is) continue;
+                    delete this[Len], proto.length -= 1, proto.value = resStr;
+                }
+                skipPropChange = 1, ele.className = proto.value, skipPropChange = 0;
+            };
+            window.DOMTokenList = DOMTokenList;
+            function whenPropChanges(){
+                var evt = window.event, prop = evt.propertyName;
+                if ( !skipPropChange && (prop==="className" || (prop==="classList" && !defineProperty)) ) {
+                    var target = evt.srcElement, protoObjProto = target[" uCLp"], strval = "" + target[prop];
+                    var tokens=strval.trim().split(wsRE), resTokenList=target[prop==="classList"?" uCL":"classList"];
+                    var oldLen = protoObjProto.length;
+                    a: for(var cI = 0, cLen = protoObjProto.length = tokens.length, sub = 0; cI !== cLen; ++cI){
+                        for(var innerI=0; innerI!==cI; ++innerI) if(tokens[innerI]===tokens[cI]) {sub++; continue a;}
+                        resTokenList[cI-sub] = tokens[cI];
+                    }
+                    for (var i=cLen-sub; i < oldLen; ++i) delete resTokenList[i]; //remove trailing indexs
+                    if(prop !== "classList") return;
+                    skipPropChange = 1, target.classList = resTokenList, target.className = strval;
+                    skipPropChange = 0, resTokenList.length = tokens.length - sub;
+                }
+            }
+            function polyfillClassList(ele){
+                if (!ele || !("innerHTML" in ele)) throw TypeError("Illegal invocation");
+                ele.detachEvent( "onpropertychange", whenPropChanges ); // prevent duplicate handler infinite loop
+                allowTokenListConstruction = 1;
+                try{ function protoObj(){} protoObj.prototype = new DOMTokenList(); }
+                finally { allowTokenListConstruction = 0 }
+                var protoObjProto = protoObj.prototype, resTokenList = new protoObj();
+                a: for(var toks=ele.className.trim().split(wsRE), cI=0, cLen=toks.length, sub=0; cI !== cLen; ++cI){
+                    for (var innerI=0; innerI !== cI; ++innerI) if (toks[innerI] === toks[cI]) { sub++; continue a; }
+                    this[cI-sub] = toks[cI];
+                }
+                protoObjProto.length = cLen-sub, protoObjProto.value = ele.className, protoObjProto[" uCL"] = ele;
+                if (defineProperty) { defineProperty(ele, "classList", { // IE8 & IE9 allow defineProperty on the DOM
+                    enumerable:   1, get: function(){return resTokenList},
+                    configurable: 0, set: function(newVal){
+                        skipPropChange = 1, ele.className = protoObjProto.value = (newVal += ""), skipPropChange = 0;
+                        var toks = newVal.trim().split(wsRE), oldLen = protoObjProto.length;
+                        a: for(var cI = 0, cLen = protoObjProto.length = toks.length, sub = 0; cI !== cLen; ++cI){
+                            for(var innerI=0; innerI!==cI; ++innerI) if(toks[innerI]===toks[cI]) {sub++; continue a;}
+                            resTokenList[cI-sub] = toks[cI];
+                        }
+                        for (var i=cLen-sub; i < oldLen; ++i) delete resTokenList[i]; //remove trailing indexs
+                    }
+                }); defineProperty(ele, " uCLp", { // for accessing the hidden prototype
+                    enumerable: 0, configurable: 0, writeable: 0, value: protoObj.prototype
+                }); defineProperty(protoObjProto, " uCL", {
+                    enumerable: 0, configurable: 0, writeable: 0, value: ele
+                }); } else { ele.classList=resTokenList, ele[" uCL"]=resTokenList, ele[" uCLp"]=protoObj.prototype; }
+                ele.attachEvent( "onpropertychange", whenPropChanges );
+            }
+            try { // Much faster & cleaner version for IE8 & IE9:
+                // Should work in IE8 because Element.prototype instanceof Node is true according to the specs
+                window.Object.defineProperty(window.Element.prototype, "classList", {
+                    enumerable: 1,   get: function(val){
+                                        if (!hasOwnProp.call(this, "classList")) polyfillClassList(this);
+                                        return this.classList;
+                                    },
+                    configurable: 0, set: function(val){this.className = val}
+                });
+            } catch(e) { // Less performant fallback for older browsers (IE 6-8):
+                window[" uCL"] = polyfillClassList;
+                // the below code ensures polyfillClassList is applied to all current and future elements in the doc.
+                document.documentElement.firstChild.appendChild(document.createElement('style')).styleSheet.cssText=(
+                    '_*{x-uCLp:expression(!this.hasOwnProperty("classList")&&window[" uCL"](this))}' + //  IE6
+                    '[class]{x-uCLp/**/:expression(!this.hasOwnProperty("classList")&&window[" uCL"](this))}' //IE7-8
+                );
+            }
+        })(window);
+        // 3. Patch in unsupported methods in DOMTokenList
+        (function(DOMTokenListProto, testClass){
+            if (!DOMTokenListProto.item) DOMTokenListProto.item = function(i){
+                function NullCheck(n) {return n===void 0 ? null : n} return NullCheck(this[i]);
+            };
+            if (!DOMTokenListProto.toggle || testClass.toggle("a",0)!==false) DOMTokenListProto.toggle=function(val){
+                if (arguments.length > 1) return (this[arguments[1] ? "add" : "remove"](val), !!arguments[1]);
+                var oldValue = this.value;
+                return (this.remove(oldValue), oldValue === this.value && (this.add(val), true) /*|| false*/);
+            };
+            if (!DOMTokenListProto.replace || typeof testClass.replace("a", "b") !== "boolean")
+                DOMTokenListProto.replace = function(oldToken, newToken){
+                    checkIfValidClassListEntry("replace", oldToken), checkIfValidClassListEntry("replace", newToken);
+                    var oldValue = this.value;
+                    return (this.remove(oldToken), this.value !== oldValue && (this.add(newToken), true));
+                };
+            if (!DOMTokenListProto.contains) DOMTokenListProto.contains = function(value){
+                for (var i=0,Len=this.length; i !== Len; ++i) if (this[i] === value) return true;
+                return false;
+            };
+            if (!DOMTokenListProto.forEach) DOMTokenListProto.forEach = function(f){
+                if (arguments.length === 1) for (var i = 0, Len = this.length; i !== Len; ++i) f( this[i], i, this);
+                else for (var i=0,Len=this.length,tArg=arguments[1]; i !== Len; ++i) f.call(tArg, this[i], i, this);
+            };
+            if (!DOMTokenListProto.entries) DOMTokenListProto.entries = function(){
+                var nextIndex = 0, that = this;
+                return {next: function() {
+                    return nextIndex<that.length ? {value: [nextIndex, that[nextIndex++]], done: false} : {done: true};
+                }};
+            };
+            if (!DOMTokenListProto.values) DOMTokenListProto.values = function(){
+                var nextIndex = 0, that = this;
+                return {next: function() {
+                    return nextIndex<that.length ? {value: that[nextIndex++], done: false} : {done: true};
+                }};
+            };
+            if (!DOMTokenListProto.keys) DOMTokenListProto.keys = function(){
+                var nextIndex = 0, that = this;
+                return {next: function() {
+                    return nextIndex<that.length ? {value: nextIndex++, done: false} : {done: true};
+                }};
+            };
+        })(window.DOMTokenList.prototype, window.document.createElement("div").classList);
+        })(window);
+    </script>
+</head>
+<body class="disable-select">
+
+<noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNB957R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+<div id="canvas-container" class="disable-select"></div>
+<div id="credits" class="disable-select">
+<div class="center">
+<p>
+<strong>Short Trip - Alexander Perrin, 2017</strong>
+</p>
+<p>Hold left or right to move.</p>
+<p>Read more about the project
+<a href="http://alexanderperrin.com.au/portfolio/short-trip/" target="_blank">here.</a>
+</p>
+<p>Thank you to
+<a href="https://twitter.com/domwillmott" target="_blank">Dom Willmott</a> for
+<br/>audio support.</p>
+<p>If you would like to support Short Trip, you're welcome (but not obliged) to make a contribution
+<a href="https://paypal.me/alexanderperrin">here.</a>
+</p>
+<p>Quality Mode:
+<span class="quality-setting selected" id="default-button">Default</span>
+<span class="quality-setting" id="eco-button">Eco</span>
+</p>
+<p>Sound:
+<span class="quality-setting selected" id="mute-off">On</span>
+<span class="quality-setting" id="mute-on">Off</span>
+</p>
+</div>
+</div>
+<div id="credits-button" class="disable-select">
+<img id="credits-icon" src="static/img/info.png">
+</div>
+<div id="controls" class="text-center fixed fullscreen disable-select">
+<p>Short Trip<br/><span class="text-small">by Alexander Perrin</span></p>
+<div id="sound-playback">
+<div class="play" id="resume-audio">
+<p>Tap to enable audio</p>
+</div>
+<div class="mute" id="mute-audio">
+<p>Or play without sound</p>
+</div>
+</div>
+<p>
+&lt;- &nbsp; Tap and hold left and right to move &nbsp; -&gt;
+</p>
+</div>
+</div>
+<div id="actions" class="disable-select">
+<span class="action">Audio:
+<span class="quality-setting selected" id="enable-audio">On</span>
+<span class="quality-setting" id="disable-audio">Off</span>
+</span>
+<span class="action"><a href="https://www.paypal.me/alexanderperrin" target="_blank">Support Donation</a></span>
+<span class="action"><a href="https://2pt.com.au/" target="_blank">Current Works</a></span>
+</div>
+<div id="loader">
+<div class="label">
+<span id="loader-content">Loading ~
+<span id="loading-message">Code</span> ~
+<span id="loading-percent"></span>
+</span>
+<img class="spinner" src="static/img/spinner.svg">
+</div>
+</div>
+<script src="static/bundle20201224.js" type="cfcbfb21f6db71054ffaa74a-text/javascript"></script>
+<script type="cfcbfb21f6db71054ffaa74a-text/javascript">
+        function webAudioCtxRusume() {
+            Howler.ctx.resume().then(() => {
+                console.log('Playback resumed successfully');
+            });
+        }
+        function hideSoundDialog() {
+            $('#sound-playback').fadeOut('fast');
+        }
+        // Chrome audio playback (see: https://goo.gl/7K7WLu)
+        document.querySelector('#sound-playback > #resume-audio').addEventListener('click', function () {
+            webAudioCtxRusume();
+            hideSoundDialog();
+        });
+        document.querySelector('#sound-playback > #mute-audio').addEventListener('click', function () {
+            Howler.mute(true)
+            hideSoundDialog();
+        });
+        document.querySelector('#mute-off').addEventListener('click', function () {
+            webAudioCtxRusume();
+            hideSoundDialog();
+        });
+        // Inline mute controls
+        var muteOn = document.querySelector("#enable-audio");
+        var muteOff = document.querySelector("#disable-audio");
+        var className = "selected";
+        muteOff.addEventListener("click", function () {
+            Howler.mute(true);
+            muteOff.classList.add(className);
+            muteOn.classList.remove(className);
+        });
+        muteOn.addEventListener("click", function() {
+            webAudioCtxRusume();
+            Howler.mute(false);
+            muteOn.classList.add(className);
+            muteOff.classList.remove(className);
+        });
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="cfcbfb21f6db71054ffaa74a-|49" defer></script></body>
+</html>
