@@ -15,3 +15,4 @@
 - cocosmos.online
 - alexanderperrin.com.au
 - www.anumberfromtheghost.com
+- 45r.jp/ja/indigo-hakusho
