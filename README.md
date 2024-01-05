@@ -17,3 +17,5 @@
 - www.anumberfromtheghost.com
 - 45r.jp/ja/indigo-hakusho
 - www.shelfonanelf.wtf
+- giftfinder.dolcegabbana.com
+- kidsuper.world
