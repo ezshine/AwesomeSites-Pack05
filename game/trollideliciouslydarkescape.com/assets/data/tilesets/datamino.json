@@ -1,0 +1,14 @@
+{ "columns":32,
+ "image":"G:\/Shared drives\/Projects\/AT_Design\/Geometry\/Trolli - Gummi Worms\/02_Design\/04_Tiled\/LEVELS\/Datamine\/tileset_datamine.png",
+ "imageheight":1024,
+ "imagewidth":1024,
+ "margin":0,
+ "name":"tileset_datamine",
+ "spacing":0,
+ "tilecount":1024,
+ "tiledversion":"1.4.0",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":1.4
+}

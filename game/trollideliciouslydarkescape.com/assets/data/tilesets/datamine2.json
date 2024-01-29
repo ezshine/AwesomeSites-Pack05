@@ -1,0 +1,22 @@
+{ "columns":32,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"datamine.json"
+        }
+    },
+ "image":"G:\/Shared drives\/Projects\/AT_Design\/Geometry\/Trolli - Gummi Worms\/02_Design\/04_Tiled\/level_test_01\/tileset_test2.png",
+ "imageheight":1024,
+ "imagewidth":1024,
+ "margin":0,
+ "name":"new",
+ "spacing":0,
+ "tilecount":1024,
+ "tiledversion":"1.3.5",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":1.2
+}

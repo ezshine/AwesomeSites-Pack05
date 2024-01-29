@@ -1,0 +1,41 @@
+
+mouth_excited.png
+size: 1152,582
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_back
+  rotate: true
+  xy: 609, 415
+  size: 165, 541
+  orig: 165, 541
+  offset: 0, 0
+  index: -1
+body_front
+  rotate: true
+  xy: 2, 2
+  size: 578, 605
+  orig: 583, 663
+  offset: 0, 58
+  index: -1
+pupils
+  rotate: false
+  xy: 609, 13
+  size: 157, 97
+  orig: 157, 97
+  offset: 0, 0
+  index: -1
+teeth_bottom
+  rotate: false
+  xy: 609, 112
+  size: 295, 301
+  orig: 295, 301
+  offset: 0, 0
+  index: -1
+teeth_top
+  rotate: false
+  xy: 906, 56
+  size: 243, 357
+  orig: 243, 357
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,22 @@
+{ "columns":32,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"tileset_sugarroad.json"
+        }
+    },
+ "image":"..\/..\/images\/tilesets\/tileset_sugarroad.png",
+ "imageheight":1024,
+ "imagewidth":1024,
+ "margin":0,
+ "name":"tileset_sugarroad",
+ "spacing":0,
+ "tilecount":1024,
+ "tiledversion":"1.4.0",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":1.4
+}

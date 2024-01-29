@@ -1,0 +1,76 @@
+
+octo_2.png
+size: 1750,413
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 1534, 27
+  size: 191, 227
+  orig: 191, 229
+  offset: 0, 2
+  index: -1
+2
+  rotate: true
+  xy: 1271, 24
+  size: 230, 261
+  orig: 232, 263
+  offset: 2, 2
+  index: -1
+4
+  rotate: true
+  xy: 1024, 41
+  size: 370, 108
+  orig: 374, 108
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 1271, 256
+  size: 477, 155
+  orig: 503, 155
+  offset: 1, 0
+  index: -1
+6
+  rotate: false
+  xy: 556, 8
+  size: 466, 403
+  orig: 484, 403
+  offset: 1, 0
+  index: -1
+7
+  rotate: false
+  xy: 2, 7
+  size: 325, 404
+  orig: 325, 426
+  offset: 0, 19
+  index: -1
+8
+  rotate: true
+  xy: 1134, 87
+  size: 324, 135
+  orig: 382, 161
+  offset: 56, 26
+  index: -1
+eye_L
+  rotate: false
+  xy: 1134, 37
+  size: 42, 48
+  orig: 42, 48
+  offset: 0, 0
+  index: -1
+eye_R
+  rotate: true
+  xy: 1024, 2
+  size: 37, 42
+  orig: 37, 42
+  offset: 0, 0
+  index: -1
+head3
+  rotate: false
+  xy: 329, 7
+  size: 225, 404
+  orig: 225, 410
+  offset: 0, 6
+  index: -1

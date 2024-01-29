@@ -1,0 +1,14 @@
+{ "columns":32,
+ "image":"G:\/Shared drives\/Projects\/AT_Design\/Geometry\/Trolli - Gummi Worms\/02_Design\/04_Tiled\/LEVELS\/CitricAlley\/tileset_citricalley.png",
+ "imageheight":1024,
+ "imagewidth":1024,
+ "margin":0,
+ "name":"tileset_citricalley",
+ "spacing":0,
+ "tilecount":1024,
+ "tiledversion":"1.4.0",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":1.4
+}

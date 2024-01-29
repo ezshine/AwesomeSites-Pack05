@@ -1,0 +1,48 @@
+
+monster_merged.png
+size: 417,925
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 224, 68
+  size: 176, 116
+  orig: 177, 116
+  offset: 1, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 2, 295
+  size: 267, 137
+  orig: 268, 137
+  offset: 1, 0
+  index: -1
+arm3
+  rotate: true
+  xy: 271, 186
+  size: 246, 144
+  orig: 246, 144
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 434
+  size: 412, 489
+  orig: 496, 489
+  offset: 0, 0
+  index: -1
+leftleg
+  rotate: true
+  xy: 2, 106
+  size: 187, 220
+  orig: 188, 220
+  offset: 0, 0
+  index: -1
+rightleg
+  rotate: true
+  xy: 2, 2
+  size: 102, 198
+  orig: 102, 198
+  offset: 0, 0
+  index: -1

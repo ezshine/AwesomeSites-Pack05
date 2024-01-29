@@ -1,0 +1,41 @@
+
+rainbow_fish.png
+size: 855,368
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 2
+  size: 364, 732
+  orig: 364, 732
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 736, 271
+  size: 95, 94
+  orig: 95, 94
+  offset: 0, 0
+  index: -1
+fin
+  rotate: false
+  xy: 736, 173
+  size: 92, 96
+  orig: 92, 96
+  offset: 0, 0
+  index: -1
+jaw
+  rotate: false
+  xy: 736, 16
+  size: 69, 155
+  orig: 69, 155
+  offset: 0, 0
+  index: -1
+pupil
+  rotate: true
+  xy: 807, 122
+  size: 49, 46
+  orig: 49, 46
+  offset: 0, 0
+  index: -1

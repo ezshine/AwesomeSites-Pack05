@@ -1,0 +1,22 @@
+{ "columns":32,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"gummieleaks.json"
+        }
+    },
+ "image":"G:\/Shared drives\/Projects\/AT_Design\/Geometry\/Trolli - Gummi Worms\/02_Design\/04_Tiled\/LEVELS\/Gummieleaks\/tileset_gummyleaks.png",
+ "imageheight":1024,
+ "imagewidth":1024,
+ "margin":0,
+ "name":"gummieleaks_1",
+ "spacing":0,
+ "tilecount":1024,
+ "tiledversion":"1.3.5",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":1.2
+}

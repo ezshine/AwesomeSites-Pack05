@@ -1,0 +1,34 @@
+
+troll_separated.png
+size: 991,640
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bowtie
+  rotate: true
+  xy: 885, 440
+  size: 198, 101
+  orig: 198, 101
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 885, 328
+  size: 110, 104
+  orig: 135, 109
+  offset: 1, 5
+  index: -1
+mouth
+  rotate: false
+  xy: 885, 257
+  size: 75, 69
+  orig: 75, 70
+  offset: 0, 0
+  index: -1
+troll copy
+  rotate: false
+  xy: 2, 2
+  size: 881, 636
+  orig: 881, 713
+  offset: 0, 0
+  index: -1

@@ -19,3 +19,6 @@
 - www.shelfonanelf.wtf
 - giftfinder.dolcegabbana.com
 - kidsuper.world
+- activetheory.net
+- prometheusfuels.com
+- trollideliciouslydarkescape.com
